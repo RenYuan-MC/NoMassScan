@@ -3,3 +3,4 @@ version: '${project.version}'
 main: ltd.rymc.nomassscan.NoMassScan
 api-version: 1.13
 depend: [ProtocolLib]
+folia-supported: true
