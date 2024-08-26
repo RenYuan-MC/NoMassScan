@@ -12,9 +12,10 @@ import org.bukkit.event.player.PlayerAnimationEvent;
 public class MassScanEvent {
     static {
         Skript.registerEvent("mass scan detect event", SimpleEvent.class, MassScanDetectEvent.class, "mass scan detect");
-        EventValues.registerEventValue(PlayerAnimationEvent.class, Player.class, new Getter<Player, PlayerAnimationEvent>() {
+        EventValues.registerEventValue(MassScanDetectEvent.class, Player.class, new Getter<Player, MassScanDetectEvent>() {
+
             @Override
-            public Player get(PlayerAnimationEvent event) {
+            public Player get(MassScanDetectEvent event) {
                 return event.getPlayer();
             }
         }, 0);
