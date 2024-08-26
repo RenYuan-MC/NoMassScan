@@ -1,6 +1,7 @@
 name: NoMassScan
 version: '${project.version}'
-main: ltd.rymc.nomassscan.NoMassScan
+main: ltd.rymc.protect.NoMassScan
 api-version: 1.13
-depend: [ProtocolLib]
+depend: [ ProtocolLib ]
+softdepend: [ Skript ]
 folia-supported: true
